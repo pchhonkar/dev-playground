@@ -1,0 +1,1 @@
+SELECT id, ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY ts) FROM events;
